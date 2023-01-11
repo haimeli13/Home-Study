@@ -1,0 +1,95 @@
+body {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    background: linear-gradient(#03440C,#036016, #04773B,#058E3F,#069E2D);
+    color: #ffffff;
+}
+
+h1, h2, h3, h4, p {
+    text-shadow: 0 0 1px black;
+}
+
+#bff-img {
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid black;
+    margin-bottom: 10px;
+}
+
+#bday-age {
+    background: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+    color: black;
+}
+
+#bday-date {
+    margin: 0;
+    background: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-section {
+    margin-top: 50px;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+.gift-hint {
+    margin-top: 0;
+}
+
+#gift-img-cheers {
+    height: 200px;
+}
+
+.gift-img {
+    margin: 20px auto;
+    max-width: 400px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-image: url("../images/gift-cover.jpg");
+    background-size: cover;
+}
+
+#gift-img-happy:hover , #gift-img-happy:focus , #gift-img-happy:active {
+    background-image: url("../images/happy.gif");
+}
+
+#gift-img-hot:hover , #gift-img-hot:focus , #gift-img-hot:active {
+    background-image: url("../images/hot.gif");
+}
+
+#gift-img-genius:hover , #gift-img-genius:focus , #gift-img-genius:active {
+    background-image: url("../images/genius.gif");
+}
+
+#gift-img-badass:hover , #gift-img-badass:focus , #gift-img-badass:active {
+    background-image: url("../images/badass.gif");
+}
+
+#gift-img-cheers:hover , #gift-img-cheers:focus , #gift-img-cheers:active {
+    background-image: url("../images/cheers.gif");
+}
+
+#footer {
+    font-style: italic;
+    width: 400px;
+    margin: 40px auto 20px;
+}
+
+a {
+    color: white;
+}

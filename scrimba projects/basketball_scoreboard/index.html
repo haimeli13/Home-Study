@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ScoreBoard</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="timer stylesheet"> <!-- ! icons for pause and stop -->
+    </head>
+
+    <body>
+        <!-- Timer section -->
+        <div class="container">
+            <h3>Period Time</h3>
+            <div class="timer"></div>
+        </div>
+
+        <!-- ScoreBoard section -->
+        <div class="scoreboard">
+            <div class="team">
+                <h3>HOME</h3>
+                <div class="score">
+                    <p id="home-score">0</p>
+                </div>
+                <div class="score-btns">
+                    <div class="score-btn">
+                        <button class="add-btn" onclick="addOneHome()">
+                            +1</button>
+                    </div>
+                    <div class="score-btn">
+                        <button class="add-btn" onclick="addTwoHome()">
+                            +2</button>
+                    </div>
+                    <div class="score-btn">
+                        <button class="add-btn" onclick="addThreeHome()">
+                            +3</button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="team" id="period">
+                <h4>PERIOD</h4>
+                <div class="score">
+                    <p id="period-num">1</p>
+                </div>
+            </div>
+
+            <div class="team">
+                <h3>GUEST</h3>
+                <div class="score">
+                    <p id="guest-score">0</p>
+                </div>
+                <div class="score-btns">
+                    <div class="score-btn">
+                        <button class="add-btn" onclick="addOneGuest()">+1</button>
+                    </div>
+                    <div class="score-btn">
+                        <button class="add-btn" onclick="addTwoGuest()">+2</button>
+                    </div>
+                    <div class="score-btn">
+                        <button class="add-btn" onclick="addThreeGuest()">+3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reset Section -->
+        <div class="container">
+            <button id="reset" onclick="reset()">Reset Game</button>
+        </div>
+        
+        <script src="js/index.js""></script>
+    </body>
+</html>

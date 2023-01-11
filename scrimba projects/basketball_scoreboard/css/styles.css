@@ -1,0 +1,145 @@
+@font-face {
+    font-family: Score;
+    src: url("CursedTimerULiL.ttf");
+}
+
+
+body {
+    margin: 0;   
+    background-color: #252525;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    margin: 30px auto;
+    color: white;
+}
+
+.team {
+    margin: 0 50px;
+    padding: 0 5px;
+}
+
+.score {
+    background-color: black;
+    width: 150px;
+    height: 120px;
+    font-family: Score;
+    color: orange;
+    box-shadow: none;
+}
+
+.score p{
+    width: 117px;
+    height: 120px;
+    padding: 20px;
+    font-size: 90px;
+    text-align: center;
+}
+
+.team#period {
+    margin: 170px 0 0 0;
+}
+
+.team#period h4 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+
+.team#period .score {
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+    height: 60px;
+    margin: 15px auto 0 auto;
+    
+}
+
+.team#period p{
+    color: white;
+    width: 50%;
+    height: 35px;
+    font-size: 35px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+
+.score-btns {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto;
+}
+.add-btn {
+    background: none;
+    border: 2px solid rgba(255, 255, 255, 0.726);
+    margin: 5px;
+    font-size: 20px;
+    font-family: Score;
+    color: #9AABD8;
+    cursor: pointer;
+}
+
+#reset {
+    border: none;
+    padding: 10px 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: green;
+    cursor: pointer;
+}
+
+.container {
+    margin: 5px auto;
+    text-align: center;
+}
+
+/* ⁡⁣⁣⁢​‌‌‍𝗧𝗜𝗠𝗘𝗥​⁡ */
+
+.timer {
+    font-family: sans-serif;
+    display: inline-block;
+    padding: 24px 32px;
+    border-radius: 30px;
+    background: white;
+}
+
+.timer__part {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.timer__btn {
+    width: 50px;
+    height: 50px;
+    margin-left: 16px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background: #8208e6;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+}
+
+.timer__btn--start {
+    background: #00b84c;
+}
+
+.timer__btn--stop {
+    background: #ff0256;
+}

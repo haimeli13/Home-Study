@@ -1,0 +1,81 @@
+@import url("businesscard.css");
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+/* ⁡⁣⁣⁢​‌‌‍⁡⁣⁣⁢𝗰𝗶𝘁𝘆 𝗶𝗻𝘁𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻⁡​ */
+
+.city {
+    background-image: url("../images/holon.png");
+    background-size: cover;
+    color: whitesmoke;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.city h1 {
+    background: rgb(155, 25, 155);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.city h3 {
+    background: rgb(224, 221, 44);
+    padding: 5px 10px;
+    border-radius: 8px;
+    width: 350px;
+    margin-top: -10px;
+    color: black;
+}
+
+
+
+/*​‌‌‍ ​‌‌‍⁡⁢⁣⁣𝗮𝗰𝘁𝗶𝘃𝗶𝘁𝗶𝗲𝘀⁡​ */
+
+.activities {
+    background: linear-gradient(180deg, hsla(196, 82%, 68%, 1) -2%, hsla(12, 22%, 26%, 1) 100%);
+    width: 100%;
+    color: #79CB7D;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.activities h2 {
+    text-shadow: 0 0 4px black;
+    flex-basis: 100%;
+    color: #43f54b;
+    font-size: 28px;
+    
+}
+.activities .activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    width: 20%;
+    
+}
+
+.activity img {
+    border-radius: 50%;
+    width: 50%;
+    margin: 5px;
+}
+
+.activity h3 {
+    font-weight: bold;
+    margin-bottom: -5px;
+}
+
+.activity p {
+    font-weight: 400;
+}
