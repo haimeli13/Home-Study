@@ -3,19 +3,109 @@
     <head>
         <title>password generator</title>
         <link href="./css/styles.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
 
     <body>
-        <!-- TODO: add Dark Mode / Light Mode with SUN icon - button on right corner -->
-        <input type="checkbox" id="darkmode-toggle"/>
-        <label for="darkmode-toggle"></label>
+        <div class="select-theme">
+            
+            <i class="fa fa-sun-o"></i>
+            <select class="select__input" id="selTheme">
+                <option value="auto">Auto</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
         <div class="header">
-            <h1>Generate a <br><span>random password</span></h1>
-            <p>Never use an insecure password again</p>
+
+            <div class="container">
+                <h1>Generate a <br><span>random password</span></h1>
+                <p>Never use an insecure password again</p>
+                <button class="btn" id="generate">Generate password</button>
+            </div>
+
+            <div class="container">
+                <div class="settings">
+                    <h2>Settings</h2>
+                    <div class="setting">
+                        <label>Password length</label>
+                        <input type="number" id="length" min='4' max='20' value='20' />
+                    </div>
+                    <div class="setting">
+                        <label>Include uppercase letters</label> 
+                    <input type="checkbox" id="uppercase" checked />
+                    </div>
+                    <div class="setting">
+                        <label>Include lowercase letters</label> 
+                        <input type="checkbox" id="lowercase" checked />
+                    </div>
+                    <div class="setting">
+                        <label>Include numbers</label> 
+                        <input type="checkbox" id="numbers" checked />
+                    </div>
+                    <div class="setting">
+                        <label>Include symbols</label> 
+                        <input type="checkbox" id="symbols" checked />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <div class="separator"></div>
+
+
+        <div class="result-container">
+            <div class="result">
+                <div class="generated_password" id="first"></div>
+                <button class="clipboard" id="first" onclick="copyToClipboard('first')">
+                    <i class="fa fa-clipboard"></i>
+                </button>
+            </div>
+        
+            <div class="result">    
+                <div class="generated_password" id="second"></div>
+                <button class="clipboard" id="first" onclick="copyToClipboard('second')">
+                    <i class="fa fa-clipboard"></i>
+                </button>
+            </div>
         </div>
 
-        <button>Generate password</button>
-        <div class="separator"></div>
-        <div class="footer"></div>
+        <div class="message"></div>
+
+
+        <!-- SOCIAL PANEL HTML -->
+<div class="social-panel-container">
+	<div class="social-panel">
+		<p>Created with <i class="fa fa-heart"></i> by Haimon Lemon</p>
+		<button class="close-btn"><i class="fa fa-times"></i></button>
+		<h4>Get in touch on</h4>
+		<ul>
+			<li>
+				<a href="https://api.whatsapp.com/send?phone=972584007291" target="_blank">
+					<i class="fa fa-whatsapp"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/haimeli/" target="_blank"><i class="fa fa-linkedin"></i></a>
+			</li>
+			<li>
+				<a href="https://github.com/haimeli13" target="_blank"><i class="fa fa-github"></i></a>
+			</li>
+			<li>
+				<a class="netlify" href="https://app.netlify.com/teams/haimeli13/overview" target="_blank">
+                    <img src="images/netlify.png" alt="netlify">
+                </a>
+			</li>
+		</ul>
+	</div>
+</div>
+<button class="floating-btn">
+	Get in Touch
+</button>
     </body>
+
+    <script src="./js/main.js"></script>
 </html>
