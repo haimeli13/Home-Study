@@ -1,15 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:wght@400;600;500;800&family=Orbitron:wght@400;800&display=swap');
 
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
+/* -------------------------------------------------------------------------- */
+/*                                    THEME                                   */
+/* -------------------------------------------------------------------------- */
 /* :root represents the <html> */
 :root {
-    --dark-background-color: #111111;
+    --dark-background-color: #1C1C1C;
     --dark-background-color-alt: #222222;
     --dark-trim-color: #333333;
-    --dark-text-color: #eeeeee;
+    --dark-text-color: #ffffff;
 }
 
 body {
@@ -56,65 +57,6 @@ h1.theme-light {
     font-size: 40px;
 }
 
-h2 {
-	margin: 10px 0 20px;
-	text-align: center;
-}
-
-
-span {
-    color: #4ADF86;
-}
-
-.header {
-    display: flex;
-    flex-direction: row;
-}
-
-.container {
-    margin: auto auto;
-}
-
-.header p {
-    margin-top: 0;
-}
-
-.header h1 {
-    margin-bottom: 10px;
-}
-
-.btn {
-    width: 191px;
-    height: 42px;
-    background: #10B981;
-
-    color: white;
-    font-family: 'Inter', sans-serif;
-    padding: 9px 17px 9px 15px;
-
-    /* shadow/sm */
-    border: none;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    border-radius: 6px;
-    margin: 50px 0;
-}
-
-button {
-    cursor: pointer;
-}
-
-.separator {
-    margin: 50px auto;
-    width: 90%;
-    border-bottom: 1px solid #2F3E53;;
-}
-
-.result-container {
-    margin: 52px auto auto 32px;
-    display: flex;
-    justify-content: center;
-}
-
 .select-theme {
     margin: 20px;
     display: flex;
@@ -144,90 +86,115 @@ button {
     color: #000000;
 }
 
-.generated_password {
-    width: 211px;
-    height: 39px;
-    background: #273549;
-    border-radius: 6px;
-    
-    margin: 5px;
-    padding: 5px;
-
-    color: white;
-    font-family: 'Inter', sans-serif;
-    
-    font-size: 16px;
-    font-weight: 500px;
-    line-height: 32px;
-    color: #55F991;
-    
-    text-align: center;
+/* -------------------------------------------------------------------------- */
+/*                                    MAIN                                    */
+/* -------------------------------------------------------------------------- */
+.container {
+    width: 730px;
+    border: 1px solid black;
+    margin: 10vh auto;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    background: #F4F4F4;
+    display: flex;
+    flex-direction: column;
 }
 
-.message-result {
+.container h1 {
+    color: #ffffff;
+}
+
+.container.theme-dark {
+    background: #1F2937;
+}
+
+.converted.theme-dark {
+    background: #273549;
+}
+
+.convertor {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: #6943ff;
+    margin-bottom: 22px;
 }
 
-.message {
-    margin: 30px;
-    font-size: 20px;
-    text-align: center;
-    color: #55F991;
+.convertor h1 {    
+    font-weight: 800;
+    font-size: 28px;
+    
+    letter-spacing: -0.03em;
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.result {
-    display: flex;
-    margin: 0 24px;
-    color: #55F991;
+.converted {
+    width: 80%;
+    margin: 2%;
+    align-self: center;
+
+    /* white-theme */
+    background: #FFFFFF;
+    border-radius: 5px 0px 0px 0px;
 }
 
-.clipboard {
-	border: none;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	padding: 8px 12px;
-	background-color: #3B3B98;
-    border-radius: 6px;
-
-    height: 40px;
-	width: 40px;
-    margin: auto;
-}
-
-/* settings */
-.settings {
-    background-color: #273549;
-    padding: 20px;
-    box-shadow: 0px 2px 15px rgba(252, 91, 198, 0.7);
+.converted.theme-dark p {
     color: white;
 }
 
-.settings.theme-dark {
-    background-color: white;
+.converted h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+
+    color: #5A537B;
+
+    margin: 20px;
 }
 
-input[type=checkbox] {
-	margin-right: 0;
+.converted p {
+    text-align: center;
+    font-size: 14px;
+    color: #353535;
 }
 
-.setting {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 15px 0;
+#convert-inp {
+    display: flex;
+    border: 2px solid #cdbbfc;
+    border-radius: 5px;
+    width: 120px;
+    height: 85px;
+    background: none;
+    
+    font-size: 58px;
+    font-weight: 800px;
+    text-align: center;
+    line-height: 24px;
+    color: white;
 }
 
-@media screen and (max-width: 400px) {
-	.result-container {
-		font-size: 14px;
-	}
+#convert-btn {
+    width: 117px;
+    height: 42px;
+    background: whitesmoke;
+
+    /* shadow/sm */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+
+    margin: 20px;
+    cursor: pointer;
+
+    color: #3d3d3d;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 
-/* SOCIAL PANEL CSS */
+/* -------------------------------------------------------------------------- */
+/*                              SOCIAL PANEL CSS                              */
+/* -------------------------------------------------------------------------- */
 .social-panel-container {
 	position: fixed;
 	right: 0;
