@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <title>Unit_Conversion</title>
+
+        <link rel="stylesheet" href="./css/style.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="select-theme">
+            <i class="fa fa-sun-o"></i>
+            <select class="select__input" id="selTheme">
+                <option value="auto">Auto</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+
+        <div class="container">
+            <div class="convertor">
+                <h1>Metric / Imperial Unit Conversion</h1>
+                <input type="text" id="convert-inp">
+                <button id="convert-btn">Convert</button>
+            </div>
+
+            <div class="converted" id="length"></div>
+            <div class="converted" id="volume"></div>
+            <div class="converted" id="mass"></div>
+        </div>
+
+                <!-- SOCIAL PANEL HTML -->
+                <div class="social-panel-container">
+                    <div class="social-panel">
+                        <p>Created with <i class="fa fa-heart"></i> by Haimon Lemon</p>
+                        <button class="close-btn"><i class="fa fa-times"></i></button>
+                        <h4>Get in touch on</h4>
+                        <ul>
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=972584007291" target="_blank">
+                                    <i class="fa fa-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/haimeli/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/haimeli13" target="_blank"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a class="netlify" href="https://app.netlify.com/teams/haimeli13/overview" target="_blank">
+                                    <img src="images/netlify.png" alt="netlify">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="floating-btn">
+                    Get in Touch
+                </button>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
